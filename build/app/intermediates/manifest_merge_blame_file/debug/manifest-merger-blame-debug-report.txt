@@ -1,0 +1,308 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.push_notification"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+9        android:targetSdkVersion="31" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/Users/apple/Internship Projects/Push Notification 1/push_notification/android/app/src/debug/AndroidManifest.xml:6:5-66
+14-->/Users/apple/Internship Projects/Push Notification 1/push_notification/android/app/src/debug/AndroidManifest.xml:6:22-64
+15    <uses-permission android:name="android.permission.WAKE_LOCK" />
+15-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-68
+15-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-65
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-79
+16-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-76
+17    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+17-->[:flutter_local_notifications] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-81
+17-->[:flutter_local_notifications] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-78
+18    <uses-permission android:name="android.permission.VIBRATE" />
+18-->[:flutter_local_notifications] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-66
+18-->[:flutter_local_notifications] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-63
+19    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+19-->[:flutter_local_notifications] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-81
+19-->[:flutter_local_notifications] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-78
+20    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+20-->[:flutter_local_notifications] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-79
+20-->[:flutter_local_notifications] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:10:22-76
+21    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+21-->[:flutter_local_notifications] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-77
+21-->[:flutter_local_notifications] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-74
+22    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+22-->[com.google.firebase:firebase-messaging:23.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/40bcec037e7208c6113f792c68247cf7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:25:5-82
+22-->[com.google.firebase:firebase-messaging:23.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/40bcec037e7208c6113f792c68247cf7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:25:22-79
+23
+24    <application
+25        android:name="android.app.Application"
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.6.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/875654acb8fd75501dc33efa1bebb479/core-1.6.0/AndroidManifest.xml:24:18-86
+27        android:debuggable="true"
+28        android:icon="@mipmap/ic_launcher"
+29        android:label="push_notification" >
+30        <activity
+31            android:name="com.example.push_notification.MainActivity"
+32            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+33            android:exported="true"
+34            android:hardwareAccelerated="true"
+35            android:launchMode="singleTop"
+36            android:theme="@style/LaunchTheme"
+37            android:windowSoftInputMode="adjustResize" >
+38
+39            <!--
+40                 Specifies an Android theme to apply to this Activity as soon as
+41                 the Android process has started. This theme is visible to the user
+42                 while the Flutter UI initializes. After that, this theme continues
+43                 to determine the Window background behind the Flutter UI.
+44            -->
+45            <meta-data
+46                android:name="io.flutter.embedding.android.NormalTheme"
+47                android:resource="@style/NormalTheme" />
+48
+49            <intent-filter>
+50                <action android:name="android.intent.action.MAIN" />
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+53            </intent-filter>
+54        </activity>
+55        <!--
+56             Don't delete the meta-data below.
+57             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+58        -->
+59        <meta-data
+60            android:name="flutterEmbedding"
+61            android:value="2" />
+62        <meta-data
+63            android:name="com.google.firebase.messaging.default_notification_channel_id"
+64            android:value="high_importance_channel" />
+65
+66        <service
+66-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-15:72
+67            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+67-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-107
+68            android:exported="false"
+68-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
+69            android:permission="android.permission.BIND_JOB_SERVICE" />
+69-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-69
+70        <service
+70-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-22:19
+71            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+71-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-97
+72            android:exported="false" >
+72-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+73            <intent-filter>
+73-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-21:29
+74                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+74-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-78
+74-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:25-75
+75            </intent-filter>
+76        </service>
+77
+78        <receiver
+78-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:24:9-31:20
+79            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+79-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-98
+80            android:exported="true"
+80-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-36
+81            android:permission="com.google.android.c2dm.permission.SEND" >
+81-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-73
+82            <intent-filter>
+82-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-30:29
+83                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+83-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:17-81
+83-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:25-78
+84            </intent-filter>
+85        </receiver>
+86
+87        <service
+87-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:33:9-37:19
+88            android:name="com.google.firebase.components.ComponentDiscoveryService"
+88-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:33:18-89
+89            android:directBootAware="true"
+89-->[com.google.firebase:firebase-common:20.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/be1f31d795f15c1bd24708ca9c440629/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
+90            android:exported="false" >
+90-->[com.google.firebase:firebase-messaging:23.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/40bcec037e7208c6113f792c68247cf7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:51:13-37
+91            <meta-data
+91-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:34:13-36:85
+92                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+92-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:35:17-128
+93                android:value="com.google.firebase.components.ComponentRegistrar" />
+93-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:36:17-82
+94            <meta-data
+94-->[:firebase_core] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+95                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+95-->[:firebase_core] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+96                android:value="com.google.firebase.components.ComponentRegistrar" />
+96-->[:firebase_core] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+97            <meta-data
+97-->[com.google.firebase:firebase-messaging:23.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/40bcec037e7208c6113f792c68247cf7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:52:13-54:85
+98                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+98-->[com.google.firebase:firebase-messaging:23.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/40bcec037e7208c6113f792c68247cf7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:53:17-119
+99                android:value="com.google.firebase.components.ComponentRegistrar" />
+99-->[com.google.firebase:firebase-messaging:23.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/40bcec037e7208c6113f792c68247cf7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:54:17-82
+100            <meta-data
+100-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/6632a6af0f5602f9fd1edc954c6606b0/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:28:13-30:85
+101                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+101-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/6632a6af0f5602f9fd1edc954c6606b0/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:29:17-115
+102                android:value="com.google.firebase.components.ComponentRegistrar" />
+102-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/6632a6af0f5602f9fd1edc954c6606b0/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:30:17-82
+103            <meta-data
+103-->[com.google.firebase:firebase-installations:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/86011a2a756648dd12cb067ceab80ecd/jetified-firebase-installations-17.0.0/AndroidManifest.xml:18:13-20:85
+104                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+104-->[com.google.firebase:firebase-installations:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/86011a2a756648dd12cb067ceab80ecd/jetified-firebase-installations-17.0.0/AndroidManifest.xml:19:17-127
+105                android:value="com.google.firebase.components.ComponentRegistrar" />
+105-->[com.google.firebase:firebase-installations:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/86011a2a756648dd12cb067ceab80ecd/jetified-firebase-installations-17.0.0/AndroidManifest.xml:20:17-82
+106        </service>
+107
+108        <provider
+108-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:39:9-43:38
+109            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+109-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-102
+110            android:authorities="com.example.push_notification.flutterfirebasemessaginginitprovider"
+110-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-88
+111            android:exported="false"
+111-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:42:13-37
+112            android:initOrder="99" />
+112-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:43:13-35
+113
+114        <receiver
+114-->[:flutter_local_notifications] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:14:9-16:40
+115            android:name="com.dexterous.flutterlocalnotifications.ActionBroadcastReceiver"
+115-->[:flutter_local_notifications] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-91
+116            android:exported="false" />
+116-->[:flutter_local_notifications] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-37
+117        <receiver
+117-->[:flutter_local_notifications] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:17:9-19:40
+118            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+118-->[:flutter_local_notifications] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-97
+119            android:exported="false" />
+119-->[:flutter_local_notifications] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-37
+120        <receiver
+120-->[:flutter_local_notifications] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:20:9-29:20
+121            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+121-->[:flutter_local_notifications] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-101
+122            android:exported="false" >
+122-->[:flutter_local_notifications] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:22:13-37
+123            <intent-filter>
+123-->[:flutter_local_notifications] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:23:13-28:29
+124                <action android:name="android.intent.action.BOOT_COMPLETED" />
+124-->[:flutter_local_notifications] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:24:17-79
+124-->[:flutter_local_notifications] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:24:25-76
+125                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+125-->[:flutter_local_notifications] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:25:17-84
+125-->[:flutter_local_notifications] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:25:25-81
+126                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+126-->[:flutter_local_notifications] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:26:17-82
+126-->[:flutter_local_notifications] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:26:25-79
+127                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+127-->[:flutter_local_notifications] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:27:17-82
+127-->[:flutter_local_notifications] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:27:25-79
+128            </intent-filter>
+129        </receiver>
+130
+131        <uses-library
+131-->[androidx.window:window:1.0.0-beta04] /Users/apple/.gradle/caches/transforms-2/files-2.1/9a30143a20a029e68d2a2c8980fee508/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+132            android:name="androidx.window.extensions"
+132-->[androidx.window:window:1.0.0-beta04] /Users/apple/.gradle/caches/transforms-2/files-2.1/9a30143a20a029e68d2a2c8980fee508/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+133            android:required="false" />
+133-->[androidx.window:window:1.0.0-beta04] /Users/apple/.gradle/caches/transforms-2/files-2.1/9a30143a20a029e68d2a2c8980fee508/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+134        <uses-library
+134-->[androidx.window:window:1.0.0-beta04] /Users/apple/.gradle/caches/transforms-2/files-2.1/9a30143a20a029e68d2a2c8980fee508/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+135            android:name="androidx.window.sidecar"
+135-->[androidx.window:window:1.0.0-beta04] /Users/apple/.gradle/caches/transforms-2/files-2.1/9a30143a20a029e68d2a2c8980fee508/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+136            android:required="false" />
+136-->[androidx.window:window:1.0.0-beta04] /Users/apple/.gradle/caches/transforms-2/files-2.1/9a30143a20a029e68d2a2c8980fee508/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+137
+138        <receiver
+138-->[com.google.firebase:firebase-messaging:23.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/40bcec037e7208c6113f792c68247cf7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:28:9-35:20
+139            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+139-->[com.google.firebase:firebase-messaging:23.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/40bcec037e7208c6113f792c68247cf7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:29:13-78
+140            android:exported="true"
+140-->[com.google.firebase:firebase-messaging:23.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/40bcec037e7208c6113f792c68247cf7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:30:13-36
+141            android:permission="com.google.android.c2dm.permission.SEND" >
+141-->[com.google.firebase:firebase-messaging:23.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/40bcec037e7208c6113f792c68247cf7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:31:13-73
+142            <intent-filter>
+142-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-30:29
+143                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+143-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:17-81
+143-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:25-78
+144            </intent-filter>
+145        </receiver>
+146        <!--
+147             FirebaseMessagingService performs security checks at runtime,
+148             but set to not exported to explicitly avoid allowing another app to call it.
+149        -->
+150        <service
+150-->[com.google.firebase:firebase-messaging:23.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/40bcec037e7208c6113f792c68247cf7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:41:9-48:19
+151            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+151-->[com.google.firebase:firebase-messaging:23.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/40bcec037e7208c6113f792c68247cf7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:42:13-82
+152            android:directBootAware="true"
+152-->[com.google.firebase:firebase-messaging:23.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/40bcec037e7208c6113f792c68247cf7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:43:13-43
+153            android:exported="false" >
+153-->[com.google.firebase:firebase-messaging:23.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/40bcec037e7208c6113f792c68247cf7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:44:13-37
+154            <intent-filter android:priority="-500" >
+154-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-21:29
+155                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+155-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-78
+155-->[:firebase_messaging] /Users/apple/Internship Projects/Push Notification 1/push_notification/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:25-75
+156            </intent-filter>
+157        </service>
+158
+159        <provider
+159-->[com.google.firebase:firebase-common:20.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/be1f31d795f15c1bd24708ca9c440629/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
+160            android:name="com.google.firebase.provider.FirebaseInitProvider"
+160-->[com.google.firebase:firebase-common:20.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/be1f31d795f15c1bd24708ca9c440629/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
+161            android:authorities="com.example.push_notification.firebaseinitprovider"
+161-->[com.google.firebase:firebase-common:20.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/be1f31d795f15c1bd24708ca9c440629/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
+162            android:directBootAware="true"
+162-->[com.google.firebase:firebase-common:20.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/be1f31d795f15c1bd24708ca9c440629/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
+163            android:exported="false"
+163-->[com.google.firebase:firebase-common:20.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/be1f31d795f15c1bd24708ca9c440629/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
+164            android:initOrder="100" />
+164-->[com.google.firebase:firebase-common:20.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/be1f31d795f15c1bd24708ca9c440629/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
+165
+166        <meta-data
+166-->[com.google.android.gms:play-services-basement:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/b8e5988e0bc615162088959e72f15f1d/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+167            android:name="com.google.android.gms.version"
+167-->[com.google.android.gms:play-services-basement:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/b8e5988e0bc615162088959e72f15f1d/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+168            android:value="@integer/google_play_services_version" />
+168-->[com.google.android.gms:play-services-basement:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/b8e5988e0bc615162088959e72f15f1d/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+169
+170        <service
+170-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/5dd60b3344d4f34208d2252d987ef16e/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:29:9-35:19
+171            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+171-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/5dd60b3344d4f34208d2252d987ef16e/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:30:13-103
+172            android:exported="false" >
+172-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/5dd60b3344d4f34208d2252d987ef16e/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:31:13-37
+173            <meta-data
+173-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/5dd60b3344d4f34208d2252d987ef16e/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:32:13-34:39
+174                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+174-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/5dd60b3344d4f34208d2252d987ef16e/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:33:17-94
+175                android:value="cct" />
+175-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/5dd60b3344d4f34208d2252d987ef16e/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:34:17-36
+176        </service>
+177        <service
+177-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/0ec0449fea4988d00599841c0f5f241d/jetified-transport-runtime-3.0.0/AndroidManifest.xml:26:9-30:19
+178            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+178-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/0ec0449fea4988d00599841c0f5f241d/jetified-transport-runtime-3.0.0/AndroidManifest.xml:27:13-117
+179            android:exported="false"
+179-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/0ec0449fea4988d00599841c0f5f241d/jetified-transport-runtime-3.0.0/AndroidManifest.xml:28:13-37
+180            android:permission="android.permission.BIND_JOB_SERVICE" >
+180-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/0ec0449fea4988d00599841c0f5f241d/jetified-transport-runtime-3.0.0/AndroidManifest.xml:29:13-69
+181        </service>
+182
+183        <receiver
+183-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/0ec0449fea4988d00599841c0f5f241d/jetified-transport-runtime-3.0.0/AndroidManifest.xml:32:9-34:40
+184            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+184-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/0ec0449fea4988d00599841c0f5f241d/jetified-transport-runtime-3.0.0/AndroidManifest.xml:33:13-132
+185            android:exported="false" />
+185-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/0ec0449fea4988d00599841c0f5f241d/jetified-transport-runtime-3.0.0/AndroidManifest.xml:34:13-37
+186    </application>
+187
+188</manifest>
